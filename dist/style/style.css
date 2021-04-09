@@ -1,0 +1,22 @@
+
+
+#left-window-title
+{
+  font-family: 'Sacramento', cursive;
+  font-size: 40px;
+  float: left;
+  margin-top: 50vh;
+  margin-left: 10vw;
+  
+}
+
+#right-window
+{
+    float: right;
+}
+
+#pizza
+{
+  height: 100vh;
+  width: 40vw;
+}
