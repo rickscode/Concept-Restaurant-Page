@@ -1,10 +1,13 @@
 function loadSite () 
 
 {
-    console.log("heellllo");
-    const content = document.getElementById("content");
-    //const nav = createNav();
     
+    const content = document.getElementById("content");
+
+    let navBar = navigation();
+
+    content.appendChild(navBar);
+
     let left = leftSection();
     
     content.appendChild(left);
@@ -12,6 +15,54 @@ function loadSite ()
     let right = rightSection();
     
     content.appendChild(right);
+
+    
+
+}
+
+function navigation() 
+{
+// nav bar
+const navBar = document.createElement("nav");
+navBar.id = "nav-bar";
+
+const homePage = document.createElement("li");
+homePage.id = "home";
+const homeClick = document.createElement("a");
+homeClick.id = "home-click";
+
+const menuPage = document.createElement("li");
+menuPage.id = "menu";
+const menuClick = document.createElement("a");
+menuClick.id = "menu-click";
+
+const contactPage = document.createElement("li");
+contactPage.id = "contact";
+const contactClick = document.createElement("a");
+contactClick.id = "menu-click";
+
+
+// assign text content
+homeClick.textContent = "Home";
+menuClick.textContent = "Menu";
+contactClick.textContent = "Contact";
+
+// assign attributes
+homeClick.setAttribute("href", "#home");
+menuClick.setAttribute("href", "#menu");
+contactClick.setAttribute("href", "#contact");
+
+homePage.appendChild(homeClick);
+menuPage.appendChild(menuClick);
+contactPage.appendChild(contactClick);
+
+
+
+navBar.appendChild(contactPage);
+navBar.appendChild(menuPage);
+navBar.appendChild(homePage);
+return navBar;
+
 
 }
 
@@ -37,6 +88,8 @@ function rightSection ()
 
     return rightWindow;
 }
+
+
 
 
 export default loadSite;
