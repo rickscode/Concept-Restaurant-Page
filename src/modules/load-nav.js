@@ -31,7 +31,7 @@ menuClick.id = "menu-click";
 const contactPage = document.createElement("li");
 contactPage.id = "contact";
 const contactClick = document.createElement("a");
-contactClick.id = "menu-click";
+contactClick.id = "contact-click";
 
 
 // assign text content

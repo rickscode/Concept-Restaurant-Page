@@ -1,36 +1,56 @@
 // clear page and load new elements 
-// will need to import elements here
+// will need to import create page functions here
+// main function to bind everything together to export and import in index $
+// clear page function $
+// clear page and load menu page 
+// event listener for contact $
 
+// event listener will need to call a function that calls clear 
+// then loads page
 
+function pageController()
 
-// main function to bind everything together to export and import in index
+{
+    loadHome()
+    loadMenu();
+    loadContact();
+}
 
+function loadHome()
 
-const content = document.getElementById("content");
-const rightWindow = document.getElementById("right-window");
-
-// clear page function 
-
+{
+    const menu = document.getElementById("home-click");
+    menu.addEventListener("click", clear);
+}
   
-function clear(){
-    
-    const menu = document.getElementById("menu-click");
-    menu.addEventListener("click", function()
 
-    // remove all child nodes from content
-    {
-        let nodeList = Array.from(content.childNodes);
+function loadMenu()
+
+{
+    const menu = document.getElementById("menu-click");
+    menu.addEventListener("click", clear);
+}
+
+function loadContact()
+
+{
+    const menu = document.getElementById("contact-click");
+    menu.addEventListener("click", clear);
+}
+
+function clear()
+
+{
+    let nodeList = Array.from(content.childNodes);
         nodeList.forEach((element) => {
         content.removeChild(element);
         });
-    })
-
 }
 
 
-// event listener for menu
-// clear page and load menu page
 
-// event listener for contact
 
-export default clear;
+
+
+
+export default pageController;
