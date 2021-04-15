@@ -12,10 +12,10 @@ function loadSite ()
     
     content.appendChild(right);
 
-
 }
 
 function leftSection ()
+
 {
     const leftWindow = document.createElement("div");
     leftWindow.id = "left-window-title";

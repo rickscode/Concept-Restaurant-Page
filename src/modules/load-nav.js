@@ -8,13 +8,10 @@ function loadNav()
     content.appendChild(navBar);
 }
 
-
-
 function navigation()
 
 {
 
-// create navigation elements
 const navBar = document.createElement("nav");
 navBar.id = "nav-bar";
 
@@ -33,30 +30,23 @@ contactPage.id = "contact";
 const contactClick = document.createElement("a");
 contactClick.id = "contact-click";
 
-
-// assign text content
 homeClick.textContent = "Home";
 menuClick.textContent = "Menu";
 contactClick.textContent = "Contact";
 
-// assign attributes
 homeClick.setAttribute("href", "#home");
 menuClick.setAttribute("href", "#menu");
 contactClick.setAttribute("href", "#contact");
 
-
-// append child elements to parents
 homePage.appendChild(homeClick);
 menuPage.appendChild(menuClick);
 contactPage.appendChild(contactClick);
 
-// append child elements to navBar
 navBar.appendChild(homePage);
 navBar.appendChild(menuPage);
 navBar.appendChild(contactPage);
 
 return navBar;
-
 
 }
 

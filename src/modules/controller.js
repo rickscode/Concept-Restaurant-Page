@@ -3,7 +3,6 @@ import loadNav from './load-nav';
 import loadMenuPage from './load-menu';
 import loadContactPage from './load-contact';
 
-
 function pageController()
 
 {
@@ -29,7 +28,6 @@ function loadHome()
     
 }
   
-
 function loadMenu()
 
 {
@@ -69,11 +67,5 @@ function clear()
         content.removeChild(element);
         });
 }
-
-
-
-
-
-
 
 export default pageController;
