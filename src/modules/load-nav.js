@@ -14,7 +14,7 @@ function navigation()
 
 {
 
-    // create navigation elements
+// create navigation elements
 const navBar = document.createElement("nav");
 navBar.id = "nav-bar";
 

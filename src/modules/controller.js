@@ -1,12 +1,7 @@
-// clear page and load new elements 
-// will need to import create page functions here
-// main function to bind everything together to export and import in index $
-// clear page function $
-// clear page and load menu page 
-// event listener for contact $
+import loadSite from './page-load';
+import loadNav from './load-nav';
+import loadMenuPage from './load-menu';
 
-// event listener will need to call a function that calls clear 
-// then loads page
 
 function pageController()
 
@@ -14,13 +9,21 @@ function pageController()
     loadHome()
     loadMenu();
     loadContact();
+    
 }
 
 function loadHome()
 
 {
     const menu = document.getElementById("home-click");
-    menu.addEventListener("click", clear);
+    menu.addEventListener("click", function()
+    
+    {
+        clear();
+        loadNav();
+        loadSite();
+    });
+    
 }
   
 
@@ -28,14 +31,27 @@ function loadMenu()
 
 {
     const menu = document.getElementById("menu-click");
-    menu.addEventListener("click", clear);
+    menu.addEventListener("click", function()
+    
+    {
+        clear();
+        loadNav();
+        loadMenuPage(); // needs to be a load menu function
+    });
 }
 
 function loadContact()
 
 {
     const menu = document.getElementById("contact-click");
-    menu.addEventListener("click", clear);
+    menu.addEventListener("click", function()
+    
+    {
+        clear();
+        loadNav();
+        loadSite(); // needs to be a load contact function
+    });
+
 }
 
 function clear()
