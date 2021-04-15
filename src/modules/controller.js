@@ -1,6 +1,7 @@
 import loadSite from './page-load';
 import loadNav from './load-nav';
 import loadMenuPage from './load-menu';
+import loadContactPage from './load-contact';
 
 
 function pageController()
@@ -15,13 +16,15 @@ function pageController()
 function loadHome()
 
 {
-    const menu = document.getElementById("home-click");
-    menu.addEventListener("click", function()
+    const home = document.getElementById("home-click");
+    home.addEventListener("click", function()
     
-    {
+    {   
+        console.log("hello");
         clear();
         loadNav();
         loadSite();
+        pageController();
     });
     
 }
@@ -34,22 +37,26 @@ function loadMenu()
     menu.addEventListener("click", function()
     
     {
+        console.log("hello");
         clear();
         loadNav();
-        loadMenuPage(); // needs to be a load menu function
+        loadMenuPage();
+        pageController();
     });
 }
 
 function loadContact()
 
 {
-    const menu = document.getElementById("contact-click");
-    menu.addEventListener("click", function()
+    const contact = document.getElementById("contact-click");
+    contact.addEventListener("click", function()
     
     {
+        console.log("hello");
         clear();
         loadNav();
-        loadSite(); // needs to be a load contact function
+        loadContactPage(); 
+        pageController();
     });
 
 }
