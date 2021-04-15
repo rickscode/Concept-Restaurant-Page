@@ -20,7 +20,7 @@ function loadHome()
     home.addEventListener("click", function()
     
     {   
-        console.log("hello");
+        console.log("homepage");
         clear();
         loadNav();
         loadSite();
@@ -37,7 +37,7 @@ function loadMenu()
     menu.addEventListener("click", function()
     
     {
-        console.log("hello");
+        console.log("menupage");
         clear();
         loadNav();
         loadMenuPage();
@@ -52,7 +52,7 @@ function loadContact()
     contact.addEventListener("click", function()
     
     {
-        console.log("hello");
+        console.log("contactpage");
         clear();
         loadNav();
         loadContactPage(); 
