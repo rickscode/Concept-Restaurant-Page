@@ -4,9 +4,11 @@ function loadMenuPage()
     const content = document.getElementById("content");
     const menu = document.createElement("div");
     const pizzaMenu = document.createElement("img");
-    pizzaMenu.setAttribute("src", "https://i.imgur.com/d36stwa.png");
+    pizzaMenu.setAttribute("src", "pizzamenu.png");
     menu.id = "menu-page";
-    menu.textContent = 'PIZZA :)';
+    
+
+    menu.appendChild(pizzaMenu);
     content.appendChild(menu);
 }
 
