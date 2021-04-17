@@ -58,6 +58,10 @@ li a:hover:not(.active) {
 
 #contact-page
 {
-  color: red;
-  font-size: 400px;
+  color: black;
+  font-size: 100px;
+  top: 30vh;
+  left: 30vw;
+  
+  position: relative;
 }
